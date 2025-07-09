@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.container .face {
+  width: 480px;
+  height: 480px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .face .eyes-container {
+  width: 60%;
+  display: flex;
+  margin-left: 3.75rem;
+  padding-top: 9.375rem;
+}
+.container .face .eyes-container .eyes {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border-radius: 50%;
+  background-color: black;
+}
+.container .face .mouth {
+  width: 12.5rem;
+  height: 18.125rem;
+  border: 5px solid transparent;
+  border-bottom: 10px solid red;
+  border-radius: 45%;
+  margin-bottom: 3.75rem;
+}/*# sourceMappingURL=index.css.map */

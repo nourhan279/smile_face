@@ -1,0 +1,5 @@
+@mixin face-size($container-size, $percentage) {
+  $size: calc-face-size($container-size, $percentage);
+  width: $size;
+  height: $size;
+}

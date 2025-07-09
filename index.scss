@@ -1,0 +1,49 @@
+@import "variables";
+@import "functions";
+@import "maxin";
+
+@import "placeholders";
+
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  .face {
+    @include face-size(600px, 80);
+
+    background-color: $yellow;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .eyes-container {
+      width: 60%;
+      display: flex;
+      margin-left: rem_calc(60);
+      padding-top: rem_calc(150);
+
+      .eyes {
+        width: rem_calc(45);
+        height: rem_calc(45);
+        border-radius: 50%;
+        background-color: $black;
+      }
+    }
+
+    .mouth {
+      width: rem_calc(200);
+      height: rem_calc(290);
+      border: 5px solid transparent;
+      border-bottom: 10px solid $red;
+      border-radius: 45%;
+      margin-bottom: rem_calc(60);
+    }
+  }
+}

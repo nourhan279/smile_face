@@ -1,0 +1,7 @@
+@function rem_calc($number) {
+  @return ($number/16) * 1rem;
+}
+
+@function calc-face-size($container-size, $percentage) {
+  @return ($container-size * $percentage) / 100;
+}
